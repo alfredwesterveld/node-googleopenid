@@ -22,10 +22,10 @@ app.set('view engine', 'jade');
 
 function googlelogin(req, res, next) {
     res.render('index.jade');
+    next();
 }
 
 app.get('/', googlelogin, function(req, res) {
-    console.log('conjo');
 });
 
 if (!module.parent) {
