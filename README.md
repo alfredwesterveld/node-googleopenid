@@ -18,4 +18,5 @@ Next point your browser to http://localhost:8888/ to see it working.
 Todo
 --
 
-Better README.
+- Better documentation(README).
+- npm package.
