@@ -3,7 +3,7 @@ First of all this README is just in the beginning PHASE.
 Requirements
 --
 
-- https://github.com/havard/node-openid
+- https://github.com/havard/node-openid (Thanks Havard for this package)
 
 Run
 --
