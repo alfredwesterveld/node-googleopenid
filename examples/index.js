@@ -9,7 +9,7 @@ const app = module.exports = express.createServer();
 const CALLBACK = 'http://localhost:8888/googleopenid/verify';
 const onAuthentication = function(req, res, openid_result) {
     console.log(openid_result);
-    res.send('hello world');
+    res.send(openid_result.identifier);
 }
 
 const GoogleOpenid = require('GoogleOpenid').create(app, CALLBACK, onAuthentication);
