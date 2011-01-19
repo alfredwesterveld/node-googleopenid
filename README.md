@@ -8,7 +8,7 @@ Requirements
 Run
 --
 
-Inside `examples` folder and run the following commandL
+Inside `examples` folder run the following command:
   
 
     node index.js
