@@ -1,27 +1,20 @@
 require.paths.unshift('../lib');
 
-const PORT = 8888;
-const HOST = 'localhost';
+var PORT = 8888;
+var HOST = 'localhost';
 
-const express = require('express');
-const app = module.exports = express.createServer();
-const CALLBACK = 'http://localhost:8888/googleopenid/verify';
-const onAuthentication = function(req, res, openid_result) {
+var express = require('express');
+var app = module.exports = express.createServer();
+app.set('view engine', 'jade');
+
+var onAuthentication = function(req, res, openid_result) {
     console.log(openid_result);
     res.send("" + openid_result.identifier);
 }
-
-const GoogleOpenid = require('google-openid').create(app, CALLBACK, onAuthentication);
-
-app.use(
-    express.staticProvider(__dirname + '/public')
-);
-
-app.set('view engine', 'jade');
+require('google-openid').create(app, onAuthentication);
 
 function googlelogin(req, res, next) {
     res.render('index.jade');
-    next();
 }
 
 app.get('/', googlelogin, function(req, res) {
