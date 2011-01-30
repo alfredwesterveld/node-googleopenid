@@ -1,10 +1,9 @@
-//require.paths.unshift('../lib');
+require.paths.unshift('../lib');
 
 const PORT = 8888;
 const HOST = 'localhost';
 
 const express = require('express');
-//const openid = require('openid');
 const app = module.exports = express.createServer();
 const CALLBACK = 'http://localhost:8888/googleopenid/verify';
 const onAuthentication = function(req, res, openid_result) {
