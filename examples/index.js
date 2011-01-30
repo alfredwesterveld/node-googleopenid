@@ -11,7 +11,9 @@ var onAuthentication = function(req, res, openid_result) {
     console.log(openid_result);
     res.send("" + openid_result.identifier);
 }
-require('google-openid').create(app, onAuthentication);
+
+var callback = "http://localhost:8888/googleopenid/verify";
+require('google-openid').create(app, callback, onAuthentication);
 
 function googlelogin(req, res, next) {
     res.render('index.jade');
