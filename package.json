@@ -7,14 +7,14 @@
         "express" : ">= 0.0.1",
         "openid" : ">= 0.1.1 <= 0.1.1"
     },
-  version: '0.1.6',
+  version: '0.1.7',
   repository: {
     'type': 'git',
     'url': 'https://alfredwesterveld@github.com/alfredwesterveld/node-googleopenid.git' },
   bugs: 'https://github.com/alfredwesterveld/node-googleopenid/issues',
   'directories' : {
     'lib' : './lib' },
-  'main' : './lib/GoogleOpenid.js',
+  'main' : './lib/google-openid.js',
   "engines" : { 
     "node" : ">= 0.2.6 < 0.3.0",
   }
