@@ -19,7 +19,8 @@ Inside `examples` folder run the following command:
   
     node index.js
 
-Next point your browser to http://localhost:8888/ to see it working.
+Next point your browser to http://localhost:8888/ to see it working. 
+The example will help you understand my library.
 
 #License
 
