@@ -1,5 +1,3 @@
-require.paths.unshift('../lib');
-
 var PORT = 8888;
 var HOST = 'localhost';
 
