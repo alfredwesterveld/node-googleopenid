@@ -1,2 +1,2 @@
-.monitor
-nodemon-ignore
+.monitor.*
+nodemon-ignore.*
