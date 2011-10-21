@@ -1,21 +1,19 @@
-{ name: 'google-openid',
-  description: 'Authenticate for Google OpenID',
-  maintainers: [{ 
-    'name': 'Alfred Westerveld',
-    'email': 'alfredwesterveld@gmail.com'}],
-    "dependencies": { 
-        "express" : ">= 0.0.1",
-        "openid" : "0.3.1"
-    },
-  version: '0.1.8',
-  repository: {
-    'type': 'git',
-    'url': 'https://alfredwesterveld@github.com/alfredwesterveld/node-googleopenid.git' },
-  bugs: 'https://github.com/alfredwesterveld/node-googleopenid/issues',
-  'directories' : {
-    'lib' : './lib' },
-  'main' : './lib/google-openid.js',
-  "engines" : { 
-    "node" : ">= 0.4.1 < 0.5.0",
-  }
+{ "name": "google-openid",
+  "description": "Authenticate for Google OpenID",
+  "maintainers": [{
+    "name": "Alfred Westerveld",
+    "email": "alfredwesterveld@gmail.com"}],
+  "dependencies": {
+    "express" : ">= 0.0.1",
+    "openid" : "0.3.1"},
+  "version": "0.1.9",
+  "repository": {
+    "type": "git",
+    "url": "https://alfredwesterveld@github.com/alfredwesterveld/node-googleopenid.git" },
+  "bugs": "https://github.com/alfredwesterveld/node-googleopenid/issues",
+  "directories": {
+    "lib": "./lib"},
+  "main": "./lib/google-openid.js",
+  "engines": {
+    "node": ">= 0.4.1 < 0.5.0"}
 }
