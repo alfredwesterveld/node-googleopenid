@@ -8,9 +8,13 @@ var app = module.exports = express.createServer();
  * Called when Google's OpenID authentication has completed.
  * You need to modify this to your needs.
  */
-var onAuthentication = function(req, res, openid_result) {
+var onAuthentication = function(error, req, res, openid_result) {
     console.log(openid_result);
-    res.send("" + openid_result.identifier);
+    if (error) {
+        res.send(error);
+    } else {
+        res.send("" + openid_result.claimedIdentifier);
+    }
 };
 
 var baseURL = 'http://localhost:8888'; // base URL to map to your host
